@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24362d">
+  <meta name="description" content="MORNINGO Café — завтраки, кофе и уют каждый день.">
+  <meta property="og:title" content="MORNINGO Café">
+  <meta property="og:description" content="Завтраки, кофе и уют каждый день.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/coffee_cappuccino.webp">
+  <title>MORNINGO Café — завтраки, кофе и уют каждый день</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="MORNINGO Café — на главную">
+        <span class="brand-mark">M</span>
+        <span>
+          <strong>MORNINGO</strong>
+          <small>CAFÉ</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <a href="#menu">Меню</a>
+        <a href="#about">О кафе</a>
+        <a href="#gallery">Атмосфера</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+        <button class="button button-dark nav-book" type="button" data-open-booking>Забронировать</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> coffee · breakfast · slow mornings</p>
+          <h1>Красивое утро<br><em>начинается здесь.</em></h1>
+          <p class="hero-lead">Завтраки, кофе и уют каждый день — без спешки, с любимым вкусом и тёплым светом.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#menu">Посмотреть меню <span>↗</span></a>
+            <button class="button button-ghost" type="button" data-open-booking>Забронировать столик</button>
+          </div>
+          <div class="hero-note"><span class="pulse"></span><strong>Сегодня открыты</strong><span>08:00 — 22:00</span></div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-image-main image-card">
+            <img src="assets/breakfast_avocado_toast.webp" alt="Авокадо-тост с яйцом пашот" width="1254" height="1254" fetchpriority="high">
+          </div>
+          <div class="hero-image-small image-card">
+            <img src="assets/coffee_cappuccino.webp" alt="Капучино с латте-артом" width="1254" height="1254">
+          </div>
+          <div class="hero-badge">good<br><strong>mood</strong></div>
+          <div class="hero-stamp">M · C<br><small>EST. 2026</small></div>
+        </div>
+      </div>
+      <div class="hero-botanical" aria-hidden="true">✦</div>
+    </section>
+
+    <section class="ticker" aria-label="Специальные предложения">
+      <div class="ticker-track">
+        <span>ЗАВТРАКИ ВЕСЬ ДЕНЬ</span><i>✦</i><span>ФИЛЬТР-КОФЕ · 350 ₽</span><i>✦</i><span>ПОДАЙТЕ НАМ НАСТРОЕНИЕ</span><i>✦</i><span>ЗАВТРАКИ ВЕСЬ ДЕНЬ</span><i>✦</i><span>ФИЛЬТР-КОФЕ · 350 ₽</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">что сегодня вкусного?</p>
+          <h2>Меню, ради которого<br><em>хочется проснуться.</em></h2>
+          <p>Мы собрали любимую классику и немного авторских сочетаний. Заходите на быстрый кофе или оставайтесь на долгий завтрак.</p>
+        </div>
+
+        <div class="menu-toolbar reveal">
+          <div class="category-tabs" role="tablist" aria-label="Категории меню">
+            <button class="tab active" type="button" data-category="all">Всё</button>
+            <button class="tab" type="button" data-category="coffee">☕ Кофе</button>
+            <button class="tab" type="button" data-category="breakfast">🥐 Завтраки</button>
+            <button class="tab" type="button" data-category="snack">🥪 Перекус</button>
+            <button class="tab" type="button" data-category="dessert">🍰 Десерты</button>
+          </div>
+          <p class="menu-caption">Цены — за стандартную порцию</p>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+          <article class="dish-card reveal" data-category="breakfast" data-name="Авокадо-тост" data-price="590">
+            <div class="dish-image"><img src="assets/breakfast_avocado_toast.webp" alt="Авокадо-тост" loading="lazy" width="1254" height="1254"><span class="dish-tag">breakfast</span></div>
+            <div class="dish-info"><div><h3>Авокадо-тост</h3><p>Хлеб на закваске, авокадо, яйцо пашот, микрогрин.</p></div><strong class="price">590 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Авокадо-тост в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="breakfast" data-name="Eggs Benedict" data-price="690">
+            <div class="dish-image"><img src="assets/breakfast_eggs_benedict.webp" alt="Eggs Benedict" loading="lazy" width="1254" height="1254"><span class="dish-tag">best seller</span></div>
+            <div class="dish-info"><div><h3>Eggs Benedict</h3><p>Бриошь, шпинат, лосось, яйцо пашот, голландез.</p></div><strong class="price">690 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Eggs Benedict в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="breakfast" data-name="Гранола с йогуртом" data-price="490">
+            <div class="dish-image"><img src="assets/breakfast_granola_yogurt.webp" alt="Гранола с йогуртом и ягодами" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Гранола & ягоды</h3><p>Греческий йогурт, домашняя гранола, свежие ягоды и мёд.</p></div><strong class="price">490 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Гранолу в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="coffee" data-name="Cappuccino" data-price="320">
+            <div class="dish-image"><img src="assets/coffee_cappuccino.webp" alt="Капучино" loading="lazy" width="1254" height="1254"><span class="dish-tag">signature</span></div>
+            <div class="dish-info"><div><h3>Cappuccino</h3><p>Эспрессо, шелковистое молоко и плотная кремовая пенка.</p></div><strong class="price">320 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Cappuccino в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="coffee" data-name="Latte" data-price="340">
+            <div class="dish-image"><img src="assets/coffee_latte.webp" alt="Латте" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Latte</h3><p>Двойной эспрессо, мягкое молоко и тонкий слой пены.</p></div><strong class="price">340 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Latte в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="coffee" data-name="Flat White" data-price="360">
+            <div class="dish-image"><img src="assets/coffee_flat_white.webp" alt="Flat White" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Flat White</h3><p>Двойной ристретто и микропена — насыщенно и гладко.</p></div><strong class="price">360 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Flat White в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="coffee" data-name="Espresso" data-price="240">
+            <div class="dish-image"><img src="assets/coffee_espresso.webp" alt="Эспрессо" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Espresso</h3><p>Классический шот с плотной крема и шоколадным финишем.</p></div><strong class="price">240 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Espresso в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="coffee" data-name="Iced Latte" data-price="390">
+            <div class="dish-image"><img src="assets/coffee_iced_latte.webp" alt="Айс-латте" loading="lazy" width="1254" height="1254"><span class="dish-tag">cold</span></div>
+            <div class="dish-info"><div><h3>Iced Latte</h3><p>Лёд, двойной эспрессо, молоко и лёгкая карамельная сладость.</p></div><strong class="price">390 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Iced Latte в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="coffee" data-name="Mocha" data-price="390">
+            <div class="dish-image"><img src="assets/coffee_mocha.webp" alt="Мокка" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Mocha</h3><p>Эспрессо, какао, молоко и немного взбитых сливок.</p></div><strong class="price">390 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Mocha в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="coffee" data-name="Raf" data-price="390">
+            <div class="dish-image"><img src="assets/coffee_raf.webp" alt="Раф" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Raf</h3><p>Эспрессо, сливки и ванильный сахар — бархатная классика.</p></div><strong class="price">390 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Раф в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="coffee" data-name="Affogato" data-price="420">
+            <div class="dish-image"><img src="assets/coffee_affogato.webp" alt="Аффогато" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Affogato</h3><p>Ванильное мороженое и горячий эспрессо. Маленький праздник.</p></div><strong class="price">420 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Affogato в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="coffee" data-name="Americano" data-price="290">
+            <div class="dish-image"><img src="assets/coffee_americano.webp" alt="Американо" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Americano</h3><p>Длинный кофе с чистым вкусом и мягким послевкусием.</p></div><strong class="price">290 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Americano в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="coffee" data-name="Cortado" data-price="330">
+            <div class="dish-image"><img src="assets/coffee_cortado.webp" alt="Кортадо" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Cortado</h3><p>Эспрессо и тёплое молоко в короткой, яркой подаче.</p></div><strong class="price">330 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Cortado в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="snack" data-name="Bagel с лососем" data-price="620">
+            <div class="dish-image"><img src="assets/snack_bagel_salmon.webp" alt="Бейгл с лососем" loading="lazy" width="1254" height="1254"><span class="dish-tag">all day</span></div>
+            <div class="dish-info"><div><h3>Bagel с лососем</h3><p>Бейгл, сливочный сыр, лосось, каперсы и свежая зелень.</p></div><strong class="price">620 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Бейгл с лососем в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="snack" data-name="Панини с овощами" data-price="520">
+            <div class="dish-image"><img src="assets/snack_panini.webp" alt="Панини с овощами" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Панини</h3><p>Тёплый хлеб, моцарелла, томаты, зелень и соус песто.</p></div><strong class="price">520 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Панини в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="dessert" data-name="Чизкейк с ягодами" data-price="450">
+            <div class="dish-image"><img src="assets/dessert_cheesecake.webp" alt="Чизкейк с ягодами" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Чизкейк & ягоды</h3><p>Нежный крем-сыр, хрустящая основа и ягодный соус.</p></div><strong class="price">450 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Чизкейк в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="dessert" data-name="Шоколадный торт" data-price="470">
+            <div class="dish-image"><img src="assets/dessert_chocolate_cake.webp" alt="Шоколадный торт" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Chocolate Cake</h3><p>Влажный шоколадный бисквит, ганаш и ягоды.</p></div><strong class="price">470 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Chocolate Cake в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="dessert" data-name="Cinnamon Roll" data-price="360">
+            <div class="dish-image"><img src="assets/dessert_cinnamon_roll.webp" alt="Булочка с корицей" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Cinnamon Roll</h3><p>Слойки с корицей, сливочная глазурь и лёгкая ваниль.</p></div><strong class="price">360 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Cinnamon Roll в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="dessert" data-name="Тирамису" data-price="440">
+            <div class="dish-image"><img src="assets/dessert_tiramisu.webp" alt="Тирамису" loading="lazy" width="1254" height="1254"><span class="dish-tag">classic</span></div>
+            <div class="dish-info"><div><h3>Тирамису</h3><p>Маскарпоне, савоярди, эспрессо и щепотка какао.</p></div><strong class="price">440 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить Тирамису в заказ" data-add>+</button>
+          </article>
+
+          <article class="dish-card reveal" data-category="dessert" data-name="Круассан" data-price="290">
+            <div class="dish-image"><img src="assets/dessert_croissant.webp" alt="Классический круассан" loading="lazy" width="1254" height="1254"></div>
+            <div class="dish-info"><div><h3>Butter Croissant</h3><p>Слоёный, хрустящий, тёплый. Идеален к утреннему фильтру.</p></div><strong class="price">290 ₽</strong></div>
+            <button class="add-button" type="button" aria-label="Добавить круассан в заказ" data-add>+</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section" id="about">
+      <div class="container split-grid">
+        <div class="split-media reveal">
+          <img src="assets/dessert_tiramisu.webp" alt="Деталь десерта и уютного стола" loading="lazy" width="1254" height="1254">
+          <div class="floating-card"><span>01</span><strong>Slow mornings</strong><small>без повода и спешки</small></div>
+        </div>
+        <div class="split-copy reveal">
+          <p class="eyebrow">о нас</p>
+          <h2>Место, где<br><em>утро не торопят.</em></h2>
+          <p>Мы придумали MORNINGO как любимый уголок между домом и делами: солнечные столики, хороший кофе, свежая выпечка и завтраки, которые можно есть в любое время.</p>
+          <p>Здесь можно открыть ноутбук, говорить часами или просто смотреть в окно. Главное правило — никакой спешки.</p>
+          <div class="signature">MORNINGO <span>CAFÉ</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">визуальный вкус</p>
+          <h2>Немного <em>morning mood.</em></h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item tall reveal"><img src="assets/coffee_latte.webp" alt="Латте в утреннем свете" loading="lazy" width="1254" height="1254"><figcaption>soft light</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="assets/breakfast_granola_yogurt.webp" alt="Гранола с ягодами" loading="lazy" width="1254" height="1254"><figcaption>slow breakfast</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="assets/dessert_cinnamon_roll.webp" alt="Булочка с корицей" loading="lazy" width="1254" height="1254"><figcaption>fresh from oven</figcaption></figure>
+          <figure class="gallery-item wide reveal"><img src="assets/snack_bagel_salmon.webp" alt="Бейгл с лососем" loading="lazy" width="1254" height="1254"><figcaption>good company</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="assets/coffee_iced_latte.webp" alt="Холодный айс-латте" loading="lazy" width="1254" height="1254"><figcaption>iced mood</figcaption></figure>
+          <figure class="gallery-item tall reveal"><img src="assets/dessert_cheesecake.webp" alt="Чизкейк с ягодами" loading="lazy" width="1254" height="1254"><figcaption>little treat</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="reviews-head reveal">
+          <div>
+            <p class="eyebrow">что говорят гости</p>
+            <h2>Любят не только<br><em>за красивую пенку.</em></h2>
+          </div>
+          <div class="rating"><strong>4.9</strong><span>★★★★★</span><small>наши гости</small></div>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card reveal"><div class="quote">“</div><p>«Очень хочется, чтобы утро выглядело именно так: кофе, тост и никуда не надо бежать.»</p><footer><strong>Аня</strong><span>постоянный гость</span></footer></article>
+          <article class="review-card featured reveal"><div class="quote">“</div><p>«Капучино — топ. А ещё здесь тот самый свет, из-за которого случайно остаёшься на второй кофе.»</p><footer><strong>Миша</strong><span>заходил на завтрак</span></footer></article>
+          <article class="review-card reveal"><div class="quote">“</div><p>«Спокойно, вкусно и без ощущения “быстрее поешь”. Любимое место для выходных.»</p><footer><strong>Лера</strong><span>выходной ритуал</span></footer></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacts">
+      <div class="container contact-grid">
+        <div class="contact-card reveal">
+          <p class="eyebrow">приходите в гости</p>
+          <h2>До скорой<br><em>встречи за кофе.</em></h2>
+          <div class="contact-list">
+            <div><span class="contact-label">АДРЕС</span><strong>ул. Примерная, 12 · ваш город</strong></div>
+            <div><span class="contact-label">ГРАФИК</span><strong>Пн–Вс · 08:00 — 22:00</strong></div>
+            <div><span class="contact-label">ТЕЛЕФОН</span><a href="tel:+79990000000">+7 (999) 000-00-00</a></div>
+            <div><span class="contact-label">ПОЧТА</span><a href="mailto:hello@morningo.cafe">hello@morningo.cafe</a></div>
+          </div>
+          <p class="microcopy">Контакты в макете демонстрационные — замените на актуальные данные перед публикацией.</p>
+          <div class="social-links"><a href="#" aria-label="Instagram">Instagram ↗</a><a href="#" aria-label="Telegram">Telegram ↗</a></div>
+        </div>
+        <div class="map-card reveal" aria-label="Карта расположения">
+          <div class="map-grid-bg"></div>
+          <div class="map-pin"><span></span>MORNINGO</div>
+          <div class="map-label label-1">CENTRAL</div>
+          <div class="map-label label-2">PARK</div>
+          <div class="map-label label-3">coffee & breakfast</div>
+          <a class="map-link" href="https://www.google.com/maps" target="_blank" rel="noreferrer">Открыть карту ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-inner reveal">
+        <p class="eyebrow">ваш столик ждёт</p>
+        <h2>Начнём с кофе?</h2>
+        <button class="button button-light" type="button" data-open-booking>Забронировать столик <span>↗</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand footer-brand" href="#top"><span class="brand-mark">M</span><span><strong>MORNINGO</strong><small>CAFÉ</small></span></a>
+      <div class="footer-note">кофе · завтраки · десерты<br>каждый день с 08:00</div>
+      <a class="back-top" href="#top">Наверх ↑</a>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 MORNINGO Café</span>
+      <span>created sleepkidd.ru</span>
+      <span>Made for slow mornings.</span>
+    </div>
+  </footer>
+
+  <aside class="order-bar" aria-live="polite">
+    <div><span class="order-count">0</span> позиций в заказе</div>
+    <button type="button" data-open-order>Посмотреть заказ · <strong class="order-total">0 ₽</strong></button>
+  </aside>
+
+  <div class="modal" id="booking-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+      <button class="modal-close" type="button" data-close-modal aria-label="Закрыть">×</button>
+      <p class="eyebrow">бронь столика</p>
+      <h2 id="booking-title">Запланируем<br><em>ваше утро.</em></h2>
+      <form id="booking-form" class="booking-form">
+        <label>Имя<input required name="name" type="text" autocomplete="name" placeholder="Как вас зовут?"></label>
+        <div class="form-row"><label>Дата<input required name="date" type="date"></label><label>Время<input required name="time" type="time" value="10:00"></label></div>
+        <label>Гостей<select name="guests"><option>1 гость</option><option selected>2 гостя</option><option>3 гостя</option><option>4 гостя</option><option>5+ гостей</option></select></label>
+        <button class="button button-dark wide" type="submit">Подтвердить запрос <span>↗</span></button>
+        <p class="form-hint">Форма работает без сервера: после отправки откроется ваше почтовое приложение с готовым письмом.</p>
+      </form>
+      <div class="form-success" hidden><span>✓</span><h3>Запрос подготовлен.</h3><p>Открываем почту с готовым письмом. Осталось только отправить его.</p></div>
+    </div>
+  </div>
+
+  <div class="modal" id="order-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog order-dialog" role="dialog" aria-modal="true" aria-labelledby="order-title">
+      <button class="modal-close" type="button" data-close-modal aria-label="Закрыть">×</button>
+      <p class="eyebrow">ваш заказ</p>
+      <h2 id="order-title">Собираем <em>вкусно.</em></h2>
+      <div id="order-list" class="order-list"></div>
+      <div class="order-summary"><span>Итого</span><strong class="order-total-large">0 ₽</strong></div>
+      <button class="button button-dark wide" type="button" data-order-mail>Отправить заказ <span>↗</span></button>
+      <button class="text-button wide" type="button" data-clear-order>Очистить заказ</button>
+    </div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite">Добавлено в заказ</div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
